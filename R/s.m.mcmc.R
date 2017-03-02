@@ -17,7 +17,7 @@ s.m.mcmc =  function(f, max.iter, n.walkers, n.dim, init.range, ...) {
     log.p.old = rep(NA, n.walkers)
     ensemble.old = matrix(NA, nrow=n.walkers, ncol=n.dim)
     ensemble.new = matrix(NA, nrow=n.walkers, ncol=n.dim)
-    x.chain = array(NA, dim=c(n.walkers,chain.length,n.dim))
+    samples = array(NA, dim=c(n.walkers,chain.length,n.dim))
     mcmc.object = array(NA, dim=c(n.walkers,chain.length,n.dim+1))
     
     
@@ -30,7 +30,7 @@ s.m.mcmc =  function(f, max.iter, n.walkers, n.dim, init.range, ...) {
     
     
     log.p[,1]=log.p.old
-    x.chain[ , 1, ] = ensemble.old
+    samples[ , 1, ] = ensemble.old
     
     
     # the loop
@@ -55,7 +55,7 @@ s.m.mcmc =  function(f, max.iter, n.walkers, n.dim, init.range, ...) {
         
         if (acc > test) { 
           
-          x.chain[n,l,] = ensemble.new[n,]
+          samples[n,l,] = ensemble.new[n,]
           ensemble.old[n,] = ensemble.new[n,]
           log.p[n,l] = log.p.new
           log.p.old[n] = log.p.new
@@ -63,14 +63,14 @@ s.m.mcmc =  function(f, max.iter, n.walkers, n.dim, init.range, ...) {
           
         } else {
           
-          x.chain[n,l,] = ensemble.old[n,]
+          samples[n,l,] = ensemble.old[n,]
           log.p[n,l] = log.p.old[n]
           
         }
       }
     }
     
-    mcmc.list = list(x.chain, log.p)
+    mcmc.list = list(samples=samples, log.p=log.p)
     
     return(mcmc.list)
     
