@@ -6,6 +6,22 @@
 
 
 
+#' Title
+#' 
+#' more detail akjdhakdh askjdjhsdfds
+#'
+#' @param f a funtion ti sample frrom
+#' @param max.iter 
+#' @param n.walkers 
+#' @param n.dim 
+#' @param init.range 
+#' @param ... 
+#'
+#' @return ir retur sfsdf
+#' @export
+#'
+#' @examples
+#' 1-1
 d.e.mcmc = function(f, max.iter, n.walkers, n.dim, init.range, ...) {
     
     
