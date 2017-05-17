@@ -8,16 +8,16 @@
 
 #' Title
 #' 
-#' more detail akjdhakdh askjdjhsdfds
+#' MCMC sampler: using the differential evolution jump move (implementation of the Ter Braak differential evolution)
 #'
-#' @param f a funtion ti sample frrom
-#' @param max.iter 
-#' @param n.walkers 
-#' @param n.dim 
-#' @param init.range 
-#' @param ... 
+#' @param f a funtion to sample from
+#' @param max.iter the maximum number of function evaluations
+#' @param n.walkers the number of walkers (ensemble size)
+#' @param n.dim the number of parameters to sample 
+#' @param init.range a matrix(nrow=n.dim, ncol=2) defying the initial range for all the parameters, every row of the matrix should contain the lower and the upper limit
+#' @param ... all additional agruments of f
 #'
-#' @return ir retur sfsdf
+#' @return List containing: $samples[n.walkers,chain.length,n.dim] and $log.p[n.walkers,chain.length]
 #' @export
 #'
 #' @examples
