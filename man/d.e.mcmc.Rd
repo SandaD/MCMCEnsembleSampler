@@ -2,7 +2,7 @@
 % Please edit documentation in R/d.e.mcmc.R
 \name{d.e.mcmc}
 \alias{d.e.mcmc}
-\title{Title}
+\title{MCMC Ensemble sampler with the differential evolution jump move}
 \usage{
 d.e.mcmc(f, max.iter, n.walkers, n.dim, init.range, ...)
 }
@@ -20,11 +20,11 @@ d.e.mcmc(f, max.iter, n.walkers, n.dim, init.range, ...)
 \item{...}{all additional agruments of f}
 }
 \value{
-List containing: $samples[n.walkers,chain.length,n.dim] and $log.p[n.walkers,chain.length]
+List containing: \code{samples[n.walkers,chain.length,n.dim] and $log.p[n.walkers,chain.length]}
 }
 \description{
-MCMC sampler: using the differential evolution jump move (implementation of the Ter Braak differential evolution)
+Markov Chain Monte Carlo sampler: using the differential evolution jump move (implementation of the Ter Braak differential evolution)
 }
 \examples{
-1-1
+a = 1
 }
