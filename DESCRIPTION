@@ -1,10 +1,11 @@
 Package: MCMCEnsembleSampler
 Type: Package
 Title: MCMC sampler
-Version: 1.0
-Date: 2016-11-18
-Author: Sanda Dejanic (implementation of the stretch move: Goodman and Ware and differential evolution: Ter Braak)
+Version: 1.1
+Date: 2018-04-25
+Author: Sanda Dejanic, Andreas Scheidegger
 Maintainer: Sanda Dejanic <adhaphera@gmail.com>
-Description: Samples from a target distribution
+Description: Ensemble Markov Chain Monte Carlo samplers with different strategies to generate proposals.
 License: GPL-2
 RoxygenNote: 6.0.1
+Depends: coda

@@ -48,9 +48,9 @@ NULL
 ##'  \item{log.p }{A matrix with the log density evaluate for aeach walker at each generation.}
 ##' }
 ##' @references
-##' Goodman, J. and Weare, J. (2010) Ensemble samplers with affine invariance. Communications in Applied Mathematics and Computational Science, 5(1), 65–80.
+##' Goodman, J. and Weare, J. (2010) Ensemble samplers with affine invariance. Communications in Applied Mathematics and Computational Science, 5(1), 65-80.
 ##' 
-##' Braak, C. J. F. ter and Vrugt, J. A. (2008) Differential Evolution Markov Chain with snooker updater and fewer chains. Statistics and Computing, 18(4), 435–446.
+##' Braak, C. J. F. ter and Vrugt, J. A. (2008) Differential Evolution Markov Chain with snooker updater and fewer chains. Statistics and Computing, 18(4), 435-446.
 ##' @examples
 ##' ## a log-pdf to sample from
 ##' p.log <- function(x) {
