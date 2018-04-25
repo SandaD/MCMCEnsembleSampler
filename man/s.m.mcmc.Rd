@@ -25,6 +25,3 @@ List containing: \code{$samples[n.walkers,chain.length,n.dim] and $log.p[n.walke
 \description{
 Markov Chain Monte Carlo sampler: using the stretch move (implementation of the Goodman and Ware emcee)
 }
-\examples{
-a=1
-}

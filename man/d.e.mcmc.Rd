@@ -25,6 +25,3 @@ List containing: \code{samples[n.walkers,chain.length,n.dim] and $log.p[n.walker
 \description{
 Markov Chain Monte Carlo sampler: using the differential evolution jump move (implementation of the Ter Braak differential evolution)
 }
-\examples{
-a = 1
-}
